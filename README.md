@@ -62,16 +62,16 @@ Parameters:
 Examples:
 
 Search projects:
-	python mx_sonarqube_utils/main.py --action search --q "My Project"
+	`python mx_sonarqube_utils/main.py --action search --q "My Project"`
 	
 Delete a project:
-	python mx_sonarqube_utils/main.py --action delete --project my_project_key
+	`python mx_sonarqube_utils/main.py --action delete --project my_project_key`
 
 Bulk delete projects analyzed before a specific date (dry run):
-	python mx_sonarqube_utils/main.py --action bulk_delete --analyzedBefore 2023-01-01 --dryRun
+	`python mx_sonarqube_utils/main.py --action bulk_delete --analyzedBefore 2023-01-01 --dryRun`
 
 Bulk delete projects:
-	python mx_sonarqube_utils/main.py --action bulk_delete --projects project_key1,project_key2
+	`python mx_sonarqube_utils/main.py --action bulk_delete --projects project_key1,project_key2`
 
 ##License
 MIT License
