@@ -46,7 +46,7 @@ def main():
         sys.exit(1)
 
     # Initialize API
-    sq_api = SonarQubeAPI(user_token=user_token, sonarqube_url=sonarqube_url)RUN
+    sq_api = SonarQubeAPI(user_token=user_token, sonarqube_url=sonarqube_url)
 
     # Process actions
     for action in action_list:
@@ -78,7 +78,7 @@ def main():
                     components = sq_api.projects_search(analyzedBefore=analyzedBefore, projects=projects, q=q)
                     projects_list = ','.join([component['key'] for component in components])
 
-                response = sq_api.projects_bulk_delete(projects_list)
+                    response = sq_api.projects_bulk_delete(projects_list)
                 if response.status_code == 204:
                     print("Projects deleted successfully.")
                 else:

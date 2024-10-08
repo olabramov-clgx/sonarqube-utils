@@ -1,2 +1,4 @@
 
 conf/secrets.ini
+modules/__pycache__/*
+output.json
